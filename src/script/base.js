@@ -511,7 +511,7 @@ function Base() {
             '<div id="blogrollInfo"></div>' +
             '<div id="cnzzInfo"></div>';
 
-        var bgFooter = '<footer>' +
+        var bgFooter = "<footer class='footer-c'>" +
             '<footer-background>' +
             '<figure class="clouds"></figure>' +
             '<figure class="background"></figure>' +
@@ -521,6 +521,8 @@ function Base() {
             '</footer>',
         rHref = 'https://github.com/'+window.cnblogsConfig.GhUserName+'/'+window.cnblogsConfig.GhRepositories+'/tree/'+window.cnblogsConfig.GhVersions;
 
+        // 添加footer-c类名
+        footer.addClass('footer-c')
         // 添加页脚
         footer.prepend(pvHtml).prepend(bgFooter).append(' / ThemeVersion: <a href="'+rHref
             +'" target="_blank" style="color: #888;text-decoration: underline;">'
