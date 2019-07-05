@@ -1306,8 +1306,10 @@ button {
   min-height: 100px;
   _height: 15px;
   position: absolute;
-  margin: 0;
-  padding: 300px 0 27px;
+  margin: 0 auto;
+  padding-bottom: 27px;
+  padding-right: 0;
+  padding-left: 0;
   left: 0;
   right: 0;
   text-align: center;
@@ -4356,8 +4358,11 @@ a#green_channel_wechat {
 /* ==========================================================================
    Media Queries - Smaller than 1200px
    ========================================================================== */
+/* footer的容器 */
 .footer-c {
   width: 1000px;
+  margin: 0 auto;
+  padding-top: 150px;
 }
 @media only screen and (max-width: 1200px) {
   .main-header {
@@ -4439,6 +4444,7 @@ a#green_channel_wechat {
   }
   .footer-c {
     width: auto;
+    padding-top: 15.8vw;
   }
   #pageAnimationOffOn {
     display: none;

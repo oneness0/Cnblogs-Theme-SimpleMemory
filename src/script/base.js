@@ -777,7 +777,7 @@ function Base() {
         } else {
             author = window.cnblogsConfig.blogUser;
         }
-        var str = 'Posted by ' + author + ' on ' + date;
+        var str = 'Posted by ' +`<a href='https://cnblogs.com/${author}'>${author}</a>`+ ' on ' + date;
         $('#articleInfo').append('<p class="article-info-text">'+str+'</p>');
     };
 
